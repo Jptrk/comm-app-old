@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="../styles/navigation.css" />
+    <link rel="stylesheet" href="../styles/chat.css" />
+    <title>Communications Application</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <ul class="links">
+        <li class="link-item active">
+          <a href="./chat.html">Group Chat</a>
+        </li>
+        <li class="link-item">
+          <a href="./user-list.html">Manage Users</a>
+        </li>
+        <li class="link-item">
+          <a href="./manage-document.html">Manage Documents</a>
+        </li>
+        <li class="link-item"><a href="../welcome.html">Logout</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main class="main">
+      <div class="chat-container round-corner">
+        <!-- Toolbar -->
+        <div class="toolbar">
+          <div class="toolbar-label"><h4>Group Chat</h4></div>
+          <div class="close">
+            <a href="./dashboard.html">
+              <img src="../Assets/close-button.svg" alt="close" width="28"
+            /></a>
+          </div>
+        </div>
+        <!-- Message container -->
+        <div class="message-container round-corner">
+          <div class="message">
+            <span class="data-time">[2013-01-27 01:00:16]</span>
+            <span class="user-name">Anne Hunter : </span>
+            <span class="user-message"
+              >Eveniet ducimus dolorem maxime est cumque provident assumenda
+              placeat quam vel ullam eaque beatae sapiente dolore, culpa
+              repellat nemo error facere reprehenderit corrupti!</span
+            >
+          </div>
+          <div class="message">
+            <span class="data-time">[2013-01-27 01:00:16]</span>
+            <span class="user-name">Jack Washk : </span>
+            <span class="user-message"
+              >Harum laboriosam, earum iure porro odit architecto totam
+              recusandae placeat repellendus libero!</span
+            >
+          </div>
+        </div>
+
+        <!-- Chat input -->
+        <div class="chat-input-container round-corner">
+          <div class="user-name">
+            <h4>Anne Hunter</h4>
+          </div>
+          <div class="input-message">
+            <!-- <input type="text" name="message" /> -->
+            <textarea name="message" rows="1" class="message-input"></textarea>
+          </div>
+          <div class="actions">
+            <input type="submit" value="Send" />
+            <input type="submit" value="Refresh" onclick="history.go(0)" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../scripts/chat.js"></script>
+  </body>
+</html>

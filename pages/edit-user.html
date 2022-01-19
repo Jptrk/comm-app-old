@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="../styles/navigation.css" />
+    <link rel="stylesheet" href="../styles/edit-user.css" />
+    <title>Communications Application</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <ul class="links">
+        <li class="link-item"><a href="./chat.html">Group Chat</a></li>
+        <li class="link-item active">
+          <a href="./user-list.html">Manage Users</a>
+        </li>
+        <li class="link-item">
+          <a href="./manage-document.html">Manage Documents</a>
+        </li>
+        <li class="link-item"><a href="../welcome.html">Logout</a></li>
+      </ul>
+    </nav>
+
+    <main class="main">
+      <!-- Header -->
+      <div>
+        <h1 class="header">Edit User</h1>
+      </div>
+
+      <!-- Edit Form -->
+      <form class="flex-container-column edit-form" action="./user-list.html">
+        <div class="form-row">
+          <label class="form-label"><strong>Full Name</strong></label>
+          <input type="text" name="fullname" placeholder="Full Name" required />
+        </div>
+        <div class="form-row">
+          <label class="form-label"><strong>Email</strong></label>
+          <input type="text" name="email" placeholder="Email" required />
+        </div>
+        <div class="form-row">
+          <input type="submit" value="Save" class="submit" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

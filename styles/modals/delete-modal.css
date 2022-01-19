@@ -1,0 +1,64 @@
+/* ---------- */
+/*---Delete---*/
+/* ---------- */
+.delete-modal {
+  position: fixed;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+  width: 300px;
+}
+
+/* Message */
+.delete-modal .message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: center;
+
+  padding: 40px 0;
+}
+
+/* Actions */
+.delete-modal .actions {
+  padding: 0 0 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.delete-modal button {
+  padding: 6px 30px;
+  font-size: 12px;
+}
+
+.delete-modal button:hover {
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 0px 3px blue;
+}
+
+/* Toolbar */
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  padding: 2px 2px;
+  width: 100%;
+}
+
+.toolbar .toolbar-label {
+  width: 100%;
+  text-align: center;
+}
+
+.toolbar .close {
+  cursor: pointer;
+}

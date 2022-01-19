@@ -1,0 +1,17 @@
+/* Main Content */
+.main {
+  padding-top: 10%;
+}
+
+.header {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+/* Set margin */
+.existing-users,
+.new-users,
+h4 {
+  margin-bottom: 40px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/registration.css" />
+    <link rel="stylesheet" href="../global.css" />
+    <title>Communications Application</title>
+  </head>
+  <body>
+    <main class="flex-container-column main">
+      <!-- Header -->
+      <div class="header-container">
+        <h1 class="header">Register</h1>
+      </div>
+
+      <!-- Registration form -->
+      <form
+        class="flex-container-column register-form"
+        action="./registration-successful.html"
+      >
+        <!-- Fullname -->
+        <div class="form-row">
+          <label class="form-label"><strong>Fullname</strong></label>
+          <input type="text" name="fullname" placeholder="Fullname" required />
+        </div>
+        <!-- Email -->
+        <div class="form-row">
+          <label class="form-label"><strong>Email</strong></label>
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+        <!-- Password -->
+        <div class="form-row">
+          <label class="form-label"><strong>Password</strong></label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <!-- Confirm password -->
+        <div class="form-row">
+          <label class="form-label"><strong>Confirm Password</strong></label>
+          <input
+            type="password"
+            name="confirm-password"
+            placeholder="Confirm Password"
+            required
+          />
+        </div>
+        <!-- Submit -->
+        <div class="form-row">
+          <input type="submit" value="Register" class="submit" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

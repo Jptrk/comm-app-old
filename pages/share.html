@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/navigation.css" />
+    <link rel="stylesheet" href="../styles/modals/delete-modal.css" />
+    <link rel="stylesheet" href="../styles/share.css" />
+    <link rel="stylesheet" href="../global.css" />
+    <title>Communications Application</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <ul class="links">
+        <li class="link-item"><a href="./chat.html">Group Chat</a></li>
+        <li class="link-item">
+          <a href="./user-list.html">Manage Users</a>
+        </li>
+        <li class="link-item active">
+          <a href="./manage-document.html">Manage Documents</a>
+        </li>
+        <li class="link-item"><a href="../welcome.html">Logout</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main class="main">
+      <!-- Upload sharing -->
+      <div class="upload-sharing-container">
+        <div class="header-container">
+          <h1 class="header">
+            Upload Sharing: <span style="font-weight: 300">Sample.txt</span>
+          </h1>
+        </div>
+        <!-- Table -->
+        <div class="table-wrapper">
+          <table cellspacing="0" cellpadding="0">
+            <!-- Header -->
+            <tr>
+              <th>Shared User</th>
+              <th>Action</th>
+            </tr>
+            <!-- Data -->
+            <tr>
+              <td>Anne Hunter</td>
+              <td><a href="#" onclick="show()">Remove</a></td>
+            </tr>
+            <tr>
+              <td>Text User</td>
+              <td><a href="#" onclick="show()">Remove</a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- Add sharing -->
+      <div class="add-sharing-container">
+        <div class="header-container">
+          <h1 class="header">Add Sharing</h1>
+        </div>
+      </div>
+      <!-- Choose user container -->
+      <div class="choose-user-container round-corner">
+        <form class="choose-user-form">
+          <div class="form-row">
+            <h4>Choose User:</h4>
+            <!-- Dropdown -->
+            <div class="dropdown">
+              <div class="dropdown-header round-corner">
+                <div class="selected">J Bose</div>
+                <span class="arrow-down-container round-corner"
+                  ><span class="arrow-down"></span
+                ></span>
+              </div>
+              <ul class="dropdown-list round-corner">
+                <li class="option">J Bose</li>
+                <li class="option">HR</li>
+                <li class="option">Harsh Zaveri</li>
+              </ul>
+            </div>
+            <input
+              type="hidden"
+              name="user"
+              class="selected-user"
+              value="J Bose"
+            />
+            <input type="submit" value="Add Share" class="add-button" />
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Delete Modal -->
+    <div class="delete-modal round-corner">
+      <!-- Toolbar -->
+      <div class="toolbar">
+        <p class="toolbar-label">Confirm From Webpage</p>
+        <img
+          src="../Assets/close-button.svg"
+          alt="close"
+          class="close"
+          onclick="show()"
+        />
+      </div>
+      <!-- Message -->
+      <div class="message">
+        <img src="../Assets/question.jpg" />
+        <h4>Are you sure?</h4>
+      </div>
+      <!-- Actions -->
+      <div class="actions">
+        <button class="delete-ok" onclick="show()">Ok</button>
+        <button class="delete-cancel" onclick="show()">Cancel</button>
+      </div>
+    </div>
+
+    <script src="../scripts/share.js"></script>
+    <script src="../scripts/delete-modal.js"></script>
+  </body>
+</html>

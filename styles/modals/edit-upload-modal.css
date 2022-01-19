@@ -1,0 +1,85 @@
+/*----------------*/
+/*---Edit Modal---*/
+/*----------------*/
+.edit-modal {
+  position: fixed;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 500px;
+}
+
+.edit-modal .edit-form {
+  padding: 10px 0 5px 0;
+  min-height: 180px;
+}
+
+/* Rows */
+.edit-modal .row-1,
+.edit-modal .row-2,
+.edit-modal .row-3 {
+  padding: 10px 10px 10px 30px;
+}
+
+.edit-modal .edit-form .row-1 {
+  display: grid;
+  grid-template-columns: 30% auto;
+  align-items: center;
+}
+
+.edit-modal .edit-form .row-1 input[type="text"] {
+  padding: 6px 8px;
+  font-size: 12px;
+  max-width: 450px;
+  width: 100%;
+}
+
+.edit-modal .row-2 {
+  display: grid;
+  grid-template-columns: 30% auto;
+  align-items: center;
+}
+
+.edit-modal .row-2 .buttons-container {
+  display: flex;
+  gap: 40px;
+}
+
+.edit-modal .row-2 .buttons-container button {
+  padding: 6px 8px;
+  font-size: 12px;
+
+  background-color: #b3b3b3;
+  min-width: 100px;
+}
+
+/*-------------------*/
+/*---Media Queries---*/
+/*-------------------*/
+@media screen and (max-width: 600px) {
+  /* Edit Modal */
+  .edit-modal .edit-form .row-1,
+  .edit-modal .edit-form .row-2 {
+    padding: 10px 20px 10px 20px;
+  }
+
+  .edit-modal .edit-form .row-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .edit-modal .edit-form .row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,120 @@
+.main {
+  padding-top: 20px;
+  max-width: 1366px;
+  margin: auto;
+}
+
+/*----------------------*/
+/*----Chat container----*/
+/*----------------------*/
+
+/* Toolbar */
+.chat-container .toolbar {
+  height: 30px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  border-radius: 5px;
+}
+
+/* Header */
+.chat-container .toolbar .toolbar-label {
+  width: auto;
+}
+
+/* Close button */
+.chat-container .toolbar .close {
+  border-radius: 5px;
+
+  height: 30px;
+  width: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  right: 0px;
+
+  cursor: pointer;
+}
+
+.chat-container .toolbar .close a {
+  display: flex;
+}
+
+/* Message container */
+.message-container {
+  min-height: 50vh;
+  width: 100%;
+  border-right: none;
+  border-left: none;
+
+  padding: 20px 10px;
+  line-height: 1.5;
+}
+
+.message-container .message {
+  padding: 5px 0;
+}
+
+/* Chat input container */
+.chat-input-container {
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  margin-bottom: 100px;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.chat-input-container .user-name {
+  white-space: nowrap;
+  margin-bottom: auto;
+  margin-top: 5px;
+}
+
+.chat-input-container .actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: auto;
+  margin-top: 0px;
+}
+
+.chat-input-container input[type="submit"] {
+  padding: 6px 8px;
+  font-size: 12px;
+}
+
+.chat-input-container input[type="submit"] {
+  padding: 6px 8px;
+  font-size: 12px;
+}
+
+.input-message {
+  width: auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* .chat-input-container input[type="text"] {
+  padding: 6px 8px;
+  font-size: 12px;
+  width: 100%;
+} */
+
+textarea {
+  padding: 4px 8px;
+  font-size: 16px;
+  width: 100%;
+  resize: none;
+  overflow: hidden;
+  min-height: 30px;
+}

@@ -1,0 +1,104 @@
+.main {
+  padding-top: 20px;
+  max-width: 1366px;
+  margin: auto;
+}
+
+/*------------*/
+/*---Header---*/
+/*------------*/
+.header {
+  margin: 0 auto 40px auto;
+}
+
+/*-------------*/
+/*---Content---*/
+/*-------------*/
+/* Form */
+.form-row {
+  width: fit-content !important;
+}
+/* Add sharing */
+.add-sharing-container {
+  margin-top: 40px;
+}
+
+/* Choose user */
+.choose-user-container {
+  padding: 30px 60px;
+}
+
+.choose-user-container .choose-user-form {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.choose-user-container .choose-user-form .form-label {
+  margin-right: 0;
+}
+
+.choose-user-container .choose-user-form .add-button {
+  padding: 6px 8px;
+  font-size: 12px;
+  background-color: #b3b3b3;
+  min-width: 100px;
+}
+
+/* Dropdown */
+.dropdown {
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+.arrow-down-container {
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  transform: translateY(-50%);
+  height: 30px;
+  width: 30px;
+}
+
+.dropdown-header {
+  padding: 8px;
+  width: 250px;
+  position: relative;
+  z-index: 3;
+}
+
+.dropdown-header .selected {
+  text-align: center;
+}
+
+.arrow-down {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+
+  border-top: 10px solid black;
+  border-bottom: 10px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+
+.dropdown-list {
+  border-top: 0px !important;
+  border-radius: 0 0 4px 4px !important;
+  padding: 10px;
+  margin-top: -4px;
+  position: absolute;
+  width: 100%;
+
+  background-color: white;
+  z-index: 2;
+
+  display: none;
+}
+
+.dropdown-list .option {
+  text-align: center;
+  padding: 8px 0;
+}

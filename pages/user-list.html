@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/modals/delete-modal.css" />
+    <link rel="stylesheet" href="../styles/navigation.css" />
+    <link rel="stylesheet" href="../styles/user-list.css" />
+    <link rel="stylesheet" href="../global.css" />
+    <title>Communications Application</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <ul class="links">
+        <li class="link-item"><a href="./chat.html">Group Chat</a></li>
+        <li class="link-item active">
+          <a href="./dashboard.html">Manage Users</a>
+        </li>
+        <li class="link-item">
+          <a href="./manage-document.html">Manage Documents</a>
+        </li>
+        <li class="link-item"><a href="../welcome.html">Logout</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main class="main">
+      <!-- Page Header -->
+      <div class="header-container">
+        <div class="header"><h1>Users</h1></div>
+      </div>
+
+      <!-- User Table -->
+      <div class="table-wrapper">
+        <table cellspacing="0" cellpadding="0">
+          <!-- Table Header -->
+          <tr>
+            <th>Name</th>
+            <th>User Email ID</th>
+            <th></th>
+          </tr>
+
+          <!-- Data -->
+          <tr>
+            <td>Text User</td>
+            <td>textuser@mail.com</td>
+            <td>
+              <div class="actions">
+                <a href="./edit-user.html" class="edit">Edit</a>
+                <span>|</span>
+                <a href="#" class="delete-button" onclick="show()">Delete</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Anne Hunter</td>
+            <td>anne.hunter@mail.com</td>
+            <td>
+              <div class="actions">
+                <a href="./edit-user.html" class="edit">Edit</a>
+                <span>|</span>
+                <a href="#" class="delete-button" onclick="show()">Delete</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Jale Boser</td>
+            <td>Jale@yahoo.com</td>
+            <td>
+              <div class="actions">
+                <a href="./edit-user.html" class="edit">Edit</a>
+                <span>|</span>
+                <a href="#" class="delete-button" onclick="show()">Delete</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </main>
+
+    <!-- Delete Modal -->
+    <div class="delete-modal round-corner">
+      <!-- Toolbar -->
+      <div class="toolbar">
+        <p class="toolbar-label">Confirm User Deletion</p>
+        <img
+          src="../Assets/close-button.svg"
+          alt="close"
+          class="close"
+          onclick="show()"
+        />
+      </div>
+      <!-- Message -->
+      <div class="message">
+        <img src="../Assets/question.jpg" />
+        <h4>Are you sure?</h4>
+      </div>
+      <!-- Actions -->
+      <div class="actions">
+        <button class="delete-ok" onclick="show()">Ok</button>
+        <button class="delete-cancel" onclick="show()">Cancel</button>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="../scripts/delete-modal.js"></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+.main {
+  max-width: 1366px;
+  margin: auto;
+  padding: 20px 0px 0;
+}
+
+/*------------*/
+/*---Header---*/
+/*------------*/
+.header {
+  margin: 0 auto 40px auto;
+}
+
+/*-------------*/
+/*---Content---*/
+/*-------------*/
+
+/* My Uploads */
+.my-upload-container {
+  margin-bottom: 40px;
+}
+
+/* Shared Uploads */
+.shared-upload-container {
+  margin-bottom: 40px;
+}
+
+/* Actions */
+a {
+  width: initial;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.add-upload {
+  padding: 6px 20px;
+  font-size: 12px;
+  background-color: #66ffff;
+}
+
+/* Form */
+.form-label {
+  text-align: right;
+  white-space: nowrap;
+  margin-right: 30px;
+}
+
+/*-------------------*/
+/*---Media Queries---*/
+/*-------------------*/
+@media screen and (max-width: 1366px) {
+  .header-container {
+    padding: 0 0 0 20px;
+  }
+}

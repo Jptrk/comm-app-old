@@ -1,0 +1,21 @@
+.main {
+  padding-top: 10%;
+}
+
+.header {
+  width: fit-content;
+  margin: 0 auto 40px auto;
+}
+
+.login-form {
+  gap: 40px;
+}
+
+.submit {
+  margin: auto;
+  background-color: #69feff;
+}
+
+.form-label {
+  white-space: nowrap;
+}
